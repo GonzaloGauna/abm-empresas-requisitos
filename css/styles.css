@@ -1,8 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Outfit', sans-serif;
-  font-family: 'Poppins', sans-serif;
+ 
   margin: 0%;
   padding: 0%;
 }
@@ -13,12 +12,156 @@ html {
 }
 :root{
   /*  Primary */
+
   ---colorVerde: hsl(154, 59%, 51%);
   --colorRodjo: hsl(0, 100%, 74%);
+
   /* Accent */
+
   --colorAzul: hsl(248, 32%, 49%);
   /* Neutral */
-  --colorDarkBlue: hsl(249, 10%, 26%) ;
+
+  --colorDarkBlue: hsl(249, 67%, 18%) ;
   --colorGrashinBlue: hsl(246, 25%, 77%);
+  --primaryFont: 'Outfit', sans-serif;
+  --secondFont: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: var(--colorDarkBlue);
+  background-image: url("/images/bg-intro-desktop.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+.conteiner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-login{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  height: 60rem;  
+
+}
+
+.main-login__text{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rem;
+}
+
+.main-login__titulo{
+  font-family: var(--primaryFont);
+  letter-spacing: .1rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom:0px;
+}
+.main-login__parrafo{
+  font-family: var(--primaryFont);
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+
+/* Formulario  */
+.main-login__mainform{
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px;
+
+}
+.main-login__boxform{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 50rem;
+  height: 50rem;
+  -webkit-box-shadow: 2px 13px 18px 5px #000000; 
+  box-shadow: 2px 13px 18px 5px #000000;
+  border-radius: 1rem;
+ 
+
+}
+.main-login__form{
+  margin-bottom: 0rem;
+}
+.main-login_titleform{
+  font-family: var(--secondFont);
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.main-login__lista{
+  margin: 0rem;
+  padding: 0px;
+  list-style: none;
+}
+.main-login__li input{
+  border-radius: 5px;
+  width: 35rem;
+  height: 5rem;
+  font-family: var(--primaryFont);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0rem 1rem;
+}
+.main-login__li input:focus{
+  outline: none;
+  background-color: #eee;
+  border-color:rgb(122, 240, 189);
+}
+.main-login__submit{
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main-login__submit input{
+  letter-spacing: 0.3rem;
+  width: 35rem;
+  height: 5rem;
+  font-family: var(--primaryFont);
+  font-weight: bold;
+  color: black;
+  background-color: var(---colorVerde);
+
+}
+
+
+/* CLASES SUMIT */
+.main-login__submit input:hover{ 
+  color: white;
+  
+  background-color: rgb(122, 240, 189);
+}
+.main-login__derechos{
+  margin-bottom: 7.5rem;
+  font-family: var(--primaryFont);
+  font-size: 1.2rem;
+
+
+}
+.main-login__derechos span{
+  color: crimson;
 
 }
